@@ -1,0 +1,65 @@
+body {
+    font-family: Monospace;
+    text-align: center;
+    background-color: #F5F5DC;
+}
+
+#main {
+    margin: 30px 8px;
+    padding: 15px;
+    border-radius: 5px;
+    background: #eee;
+}
+
+#subtitle {
+    font-size: 20px;
+}
+
+#img-div {
+    background: white;
+    padding: 10px;
+}
+
+img {
+    display: block;
+    /* if the content is larger than the max width, 
+       it will automatically change the height of the element */
+    max-width: 100%;
+    /* height is automatically calculated by the browser */
+    height: auto;
+    margin: 0 auto;
+    width: 471px;
+}
+
+#headline {
+    text-align: center;
+    padding: 2%;
+}
+
+ul {
+    line-height: 1.6;
+    max-width: 550px;
+    text-align: left;
+    font-size: 14px;
+    margin: 0 auto 50px auto;
+}
+
+li {
+    padding-bottom: 10px;
+}
+
+#quote, #cite {
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 550px;
+    text-align: left;
+    margin: 0 auto 50px auto;
+}
+
+a {
+  color: #477ca7;
+}
+
+a:visited {
+  color: #74638f;
+}

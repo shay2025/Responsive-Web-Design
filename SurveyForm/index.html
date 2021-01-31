@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  
+  <div id="container">
+    
+    <head>
+      
+      <link rel="stylesheet" type="text/css" href="styles.css">
+      <title>Movie Viewing Form</title>
+      <h1 id="title">Movie Viewing Form</h1>
+      <p id="description">Thank you for taking the time to help us get an insight in movie preferences</p>
+      
+    </head>
+    
+    <body>
+      
+      <form id="survey-form">
+	
+	<div class="form-group">
+	  
+	  <label id="name-label" for="name">Name</label>
+	  <input type="text"
+		 name="name"
+		 id="name"
+		 class="form-control"
+		 placeholder="Enter your name"
+		 required>
+	  
+	</div>
+	
+	<div class="form-group">
+	  
+	  <label id="email-label" for="email">Email</label>
+	  <input type="email"
+		 name="email"
+		 id="email"
+		 class="form-control"
+		 placeholder="Enter your email"
+		 required>
+	  
+	</div>
+	
+	<div class="form-group">
+
+	  <label id="number-label" for="number">Age<span class="clue">(optional)</span></label>
+	  <input type="number"
+		 name="age"
+		 id="number"
+		 min="13"
+		 max="200"
+		 class="form-control"
+		 placeholder="Age">
+
+	</div>
+
+	<div class="form-group">
+
+	  <p>Which movie genre do you watch the most?</p>
+
+	  <select id="dropdown" name="genre" class="form-control" required>
+
+	    <option disabled selected value>Select favorite genre</option>
+	    <option value="horror">Horror</option>
+	    <option value="action">Action</option>
+	    <option value="adventure">Adventure</option>
+	    <option value="crime">Crime</option>
+	    <option value="drama">Drama</option>
+	    <option value="mistery">Mistery</option>
+	    <option value="thriller">Thriller</option>
+	    <option value="sci-fi">Science fiction</option>
+	    <option value="other">Other</option>
+
+	  </select>
+
+	</div>
+	
+	<div class="form-group">
+	  
+	  <p>How often do you watch movies?</p>
+	  
+	  <label><input type="radio" id="extreme" name="periodicity" value="extremely-often">&nbsp;&nbsp;Extremely often</label>
+	  <label><input type="radio" id="very" name="periodicity" value="very-often">&nbsp;&nbsp;Very often</label>
+	  <label><input type="radio" id="moderately" name="periodicity" value="moderately-often">&nbsp;&nbsp;Moderately often</label>
+	  <label><input type="radio" id="slightly" name="periodicity" value="slightly-often">&nbsp;&nbsp;Slightly often</label>
+	  <label><input type="radio" id="not" name="periodicity" value="not-often">&nbsp;&nbsp;Not often at all</label>
+	  
+	</div>
+	
+	<div class="form-group">
+	  
+	  <p>Which form of the movie do you prefer to watch?</p>
+	  
+	  <select id="movie-form" name="form" class="form-control" required>
+	    
+	    <option disabled selected value>Select preferenced way</option>
+	    <option value="only-original">Only with original language</option>
+	    <option value="original-sub">Original language with subtitles</option>
+	    <option value="dubbed">Dubbed</option>
+	    <option value="dubbed-sub">Dubbed and with subtitles</option>
+	    
+	  </select>
+	  
+	</div>
+	
+	<div class="form-group">
+	  
+	  <p>Which country's movie do you prefer to watch?<span class="clue">(Select all preferences)</span></p>
+	  
+	  <label><input type="checkbox" id="american" name="country" value="american">&nbsp;&nbsp;American</label>
+	  <label><input type="checkbox" id="british" name="country" value="British">&nbsp;&nbsp;British</label>
+	  <label><input type="checkbox" id="korean" name="country" value="korean">&nbsp;&nbsp;Korean</label>
+	  <label><input type="checkbox" id="thai" name="country" value="thai">&nbsp;&nbsp;Thai</label>
+	  <label><input type="checkbox" id="indian" name="country" value="indian">&nbsp;&nbsp;Indian</label>
+	  <label><input type="checkbox" id="japan" name="country" value="japanese">&nbsp;&nbsp;Japanese</label>
+	  <label><input type="checkbox" id="others" name="country" value="others">&nbsp;&nbsp;Others</label>
+	  
+	</div>
+	
+	<div class="form-group">
+	  
+	  <p>Out of all the movies you have seen, which is your most favorite?</p>
+	  
+	  <textarea id="favorites"
+		    class="input-textarea"
+		    name="favorite"
+		    placeholder="Enter your favorite movie here...">
+	  </textarea>
+	  
+	</div>
+	
+	<div class="form-group">
+	  
+	  <button type="submit" id="submit" class="submit-button">
+	    Submit
+	  </button>
+	  
+	</div>
+	
+      </form>
+      
+    </body>
+    
+  </div>
+  
+</html>

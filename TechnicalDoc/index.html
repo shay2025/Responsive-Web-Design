@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+<nav id="navbar">
+  
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  
+  <title>C Documentation</title>
+  
+  <header>C Documentation</header>
+  
+  <ul> <!-- navigation bar -->
+    <li><a class="nav-link" href="#introduction">Introduction</a></li>
+    <li><a class="nav-link" href="#structure_of_a_C_program">Structure of a C program</a></li>
+    <li><a class="nav-link" href="#header_files_inclusion">Header Files Inclusion</a></li>
+    <li><a class="nav-link" href="#main_method_declaration">Main Method Declaration</a></li>
+    <li><a class="nav-link" href="#variable_declaration">Variable Declaration</a></li>
+    <li><a class="nav-link" href="#body">Body</a></li>
+    <li><a class="nav-link" href="#return_statement">Return Statement</a></li>
+    <li><a class="nav-link" href="#references">References</a></li>
+  </ul>
+  
+</nav>
+
+<main id="main-doc"> <!-- contains the page's main content(technical documentation) -->
+  <section class="main-section" id="introduction">
+    <header>Introduction</header>
+    <p>
+      C is a procedural programming language. It was initially developed by Dennis Ritchie in the year 1972. It was mainly developed as a system programming language to write an operating system. The main features of C language include low-level access to memory, a simple set of keywords, and clean style, these features make C language suitable for system programmings like an operating system or compiler development.
+    </p>
+  </section>
+
+  <section class="main-section" id="structure_of_a_C_program">
+    <header>Structure of a C program</header>
+    <p>
+      After the above discussion, we can formally assess the structure of a C program. By structure, it is meant that any program can be written in this structure only. Writing a C program in any other structure will hence lead to a Compilation Error.
+The structure of a C program is as follows:
+    </p>
+    <img alt="structure-img" src="https://www.geeksforgeeks.org/wp-content/uploads/StructureOfCprogram-660x387.png"/>
+  </section>
+
+  <section class="main-section" id="header_files_inclusion">
+    <header>Header Files Inclusion</header>
+    <p>
+      The first and foremost component is the inclusion of the Header files in a C program.
+    </p>
+    <p>
+      A header file is a file with extension .h which contains C function declarations and macro definitions to be shared between several source files.
+    </p>
+    <p>
+      Some of C Header files:
+    </p>
+
+    <ul>
+      <li>stddef.h – Defines several useful types and macros.</li>
+      <li>stdint.h – Defines exact width integer types.</li>
+      <li>stdio.h – Defines core input and output functions</li>
+      <li>stdlib.h – Defines numeric conversion functions, pseudo-random network generator, memory allocation</li>
+      <li>string.h – Defines string handling functions</li>
+      <li>math.h – Defines common mathematical functions</li>
+    </ul>
+
+    <p><strong>Syntax to include a header file in C:</strong></p>
+    <code>#include</code>
+  </section>
+
+  <section class="main-section" id="main_method_declaration">
+    <header>Main Method Declaration</header>
+    <p>The next part of a C program is to declare the main() function. The syntax to declare the main function is:</p>
+    <p><strong>Syntax to Declare main method:</strong></p>
+    <code>
+      int main()<br>
+      {}
+    </code>
+  </section>
+
+  <section class="main-section" id="variable_declaration">
+    <header>Variable Declaration</header>
+    <p>
+      The next part of any C program is the variable declaration. It refers to the variables that are to be used in the function. Please note that in the C program, no variable can be used without being declared. Also in a C program, the variables are to be declared before any operation in the function.
+    </p>
+
+    <p><strong>Example:</strong></p>
+    <code>
+      int main()<br>
+      {<br>
+      &nbsp&nbsp<strong>int a;</strong><br>
+	  .<br>
+	  .
+    </code>
+  </section>
+
+  <section class="main-section" id="body">
+    <header>Body</header>
+    <p>
+      Body of a function in C program, refers to the operations that are performed in the functions. It can be anything like manipulations, searching, sorting, printing, etc.
+    </p>
+    <p><strong>Example:</strong></p>
+    <code>
+      int main()<br>
+      {<br>
+      &nbsp&nbspint a;<br>
+      &nbsp&nbsp<strong>printf("%d", a);</strong><br>
+	  .<br>
+	  .
+    </code>
+  </section>
+
+  <section class="main-section" id="return_statement">
+    <header>Return Statement</header>
+    <p>
+      The last part in any C program is the return statement. The return statement refers to the returning of the values from a function. This return statement and return value depend upon the return type of the function. For example, if the return type is void, then there will be no return statement. In any other case, there will be a return statement and the return value will be of the type of the specified return type.
+    </p>
+
+    <p><strong>Example:</strong></p>
+    <code>
+      int main()<br>
+      {<br>
+      &nbsp&nbspint a;<br>
+      &nbsp&nbspprintf("%d", a);<br>
+      &nbsp&nbspreturn 0;<br>
+      .<br>
+      .
+    </code>
+  </section>
+
+  <section class="main-section" id="references">
+    <header>References</header>
+    <ul>
+      <li>All the documentation in this page is taken from <a href="https://www.geeksforgeeks.org/c-language-set-1-introduction/">GeeksForGeeks</a></li>
+    </ul>
+  </section>
+</main>
